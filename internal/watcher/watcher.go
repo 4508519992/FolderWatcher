@@ -29,7 +29,7 @@ func NewWatcher(folderPath string) (*Watcher, error) {
 	}, nil
 }
 
-func (w *Watcher) Watch() {
+func (w *Watcher) Watch() error {
 	seen := make(map[string]bool)
 
 	for {
